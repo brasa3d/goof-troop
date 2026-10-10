@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000"><meta name="description" content="Sua próxima aventura começa com um toque. Goof Troop na experiência de cartucho NFC da Brasa 3D Studio.">
+<title>Goof Troop • Brasa 3D Studio</title>
+<link rel="icon" href="brasa3d-logo.jpeg" type="image/jpeg"><link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<header><a class="brand" href="./" aria-label="Brasa 3D Studio, início"><img class="brand-logo" src="brasa3d-logo.jpeg" alt="Brasa 3D Studio — Onde ideias ganham forma" width="100" height="100"></a><span class="edition">NFC COLLECTION <b>001</b></span></header>
+<main>
+<div class="eyebrow"><span class="signal"></span> UMA AVENTURA A UM TOQUE DE DISTÂNCIA</div>
+<h1 class="game-heading">Seu cartucho. <em>Sua aventura.</em></h1>
+<section class="console" aria-label="Cartucho Goof Troop">
+<div class="console-top"><span><i class="signal"></i> BRASA PLAY</span><span>16-BIT SYSTEM</span></div>
+<div class="screen" id="screen">
+<div class="landing" id="landing">
+<img src="goof-troop-title.png" class="game-art" alt="Tela inicial de Disney’s Goof Troop para SNES, com Pateta e Max sobre o logotipo do jogo" width="256" height="224" fetchpriority="high" decoding="sync">
+<div class="launch-area"><button class="start" id="start"><span aria-hidden="true">▶</span> START GAME</button><span class="launch-caption" id="launch-caption">APERTE START PARA COMEÇAR</span></div>
+</div>
+<div class="scanlines" aria-hidden="true"></div>
+</div>
+<div class="console-bottom"><span class="power"><i></i> POWER</span><span class="cartridge">GOOF TROOP / 001</span><button id="crt" aria-pressed="false" class="small">CRT <span id="crt-label">OFF</span></button></div>
+</section>
+<div class="status" id="status" role="status" aria-live="polite">Goof Troop · toque em START GAME para jogar</div>
+<div class="features"><div><span class="feature-number">01</span><strong>Toque & jogue</strong><p>O NFC abre esta página.<br>O START abre a aventura.</p></div><div><span class="feature-number">02</span><strong>Do seu jeito</strong><p>Controles na tela ou um<br>gamepad conectado ao celular.</p></div><div><span class="feature-number">03</span><strong>Continue depois</strong><p>Use salvar e carregar estado<br>no menu do emulador.</p></div></div>
+<details><summary>Como jogar</summary><div class="help"><p><b>No celular:</b> abra no Safari ou Chrome e toque em START GAME. O jogo carrega diretamente. Vire a tela para jogar com mais espaço. O primeiro carregamento precisa de internet.</p><p><b>Com controle:</b> conecte pelo Bluetooth do celular antes de iniciar. Ajuste o mapeamento no menu do emulador. Dois jogadores precisam de dois controles e configuração de cada jogador.</p><p><b>Progresso:</b> use “Salvar estado” e “Carregar estado” no menu. Guarde o arquivo de estado baixado para continuar depois.</p></div></details>
+<footer><span>FEITO PARA REVIVER BOAS HISTÓRIAS.</span><p>Brasa 3D Studio · Experiência independente<br><small>Goof Troop pertence aos seus respectivos titulares. Emulação por EmulatorJS.</small></p></footer>
+</main>
+<section id="play-stage" aria-label="Goof Troop em tela cheia" hidden>
+<div class="play-toolbar"><button class="small" id="home">← Voltar</button><span>GOOF TROOP</span><button class="small" id="fullscreen">Tela cheia</button></div>
+<div class="game-area"><div id="game"></div><div class="scanlines" aria-hidden="true"></div></div>
+<div class="play-message"><span id="play-status" role="status" aria-live="polite">Preparando Goof Troop…</span><button class="small" id="retry" hidden>Tentar novamente</button></div>
+</section>
+<script src="app.js?v=5"></script>
+</body></html>
