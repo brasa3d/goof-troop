@@ -1,0 +1,5 @@
+EmulatorJS v4.2.3
+Source: https://github.com/EmulatorJS/EmulatorJS/releases/tag/v4.2.3
+Release asset: 4.2.3.7z
+Only runtime data and SNES9x cores included. Original files unchanged.
+EmulatorJS license is included in LICENSE. Core licenses are included inside the .data archives.
